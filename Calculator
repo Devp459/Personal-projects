@@ -1,0 +1,59 @@
+#include <iostream>
+using namespace std;
+
+
+int x;
+float num1;
+float num2;
+float final_ans;
+
+int main()
+{
+    cout << "Welcome to Calculater" << endl;
+    
+    cout << "1. + \n2. - \n3. * \n4. /\n5. x^2" << endl;
+    cout << "Enter your choice: ";
+    cin >> x;
+
+
+    if (x ==5)
+    {
+        cout << "Enter number: ";
+        cin >> num1;
+        
+        final_ans = num1 * num1;
+        cout << "Your Square: " << final_ans << endl;
+
+    }
+    else
+    {
+        cout << "Enter number: ";
+        cin >> num1;
+        cout << "Enter number: ";
+        cin >> num2;
+
+        if (x == 1)
+        {
+            final_ans = num1 + num2;
+            cout << "Your Sum: " << final_ans << endl;
+        }
+        if (x == 2)
+        {
+            final_ans = num1 - num2;
+            cout << "Your Difference: " << final_ans << endl;
+        }
+        if (x == 3)
+        {
+            final_ans = num1 * num2;
+            cout << "Your Product: " << final_ans << endl;
+        }
+        if (x == 4)
+        {
+            final_ans = num1 / num2;
+            cout << "Your Division: " << final_ans << endl;
+        }
+        
+    } // else end
+    return 0;
+
+}  //End of int main()
